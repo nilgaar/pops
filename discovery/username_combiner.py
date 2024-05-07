@@ -45,7 +45,6 @@ def main():
     first_name = args.first_name
     last_name = args.last_name
     domain = args.domain
-    print(domain)
 
     output_file = f"{first_name}_{last_name}.list"
 
@@ -61,7 +60,7 @@ def main():
     if domain:
         addDomain(domain, output_file)
 
-    print("Done")
+    print("Done, the file has been created: ", output_file)
 
 
 if __name__ == "__main__":
