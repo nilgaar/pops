@@ -1,27 +1,22 @@
-import sys
 import argparse
 
 
-def combine(f, l, fileName):
-    # Combine the first name and last name
+def combine(p1, p2):
+    c = {
+        p1 + p2,
+        p1 + "." + p2,
+        p1 + "_" + p2,
+        p1 + p2[0],
+        p1[0] + p2,
+        p1[0] + "." + p2,
+        p1[0] + "_" + p2,
+    }
+    return set(map(lambda x: x + "\n", c))
+
+
+def switch(first, last, fileName):
     file = open(fileName, "a")
-    file.writelines(
-        [
-            f + l + "\n",
-            f + "." + l + "\n",
-            f + "_" + l + "\n",
-            f[0] + l + "\n",
-            f[0] + "." + l + "\n",
-            f[0] + "_" + l + "\n",
-            l + f + "\n",
-            l + "." + f + "\n",
-            l + "_" + f + "\n",
-            l + f[0] + "\n",
-            l[0] + f + "\n",
-            l[0] + "." + f + "\n",
-            l[0] + "_" + f + "\n",
-        ]
-    )
+    file.writelines(combine(first, last) | (combine(last, first)))
     file.close()
 
 
@@ -62,11 +57,10 @@ def main():
         )
         return
 
-    combine(first_name, last_name, output_file)
+    switch(first_name, last_name, output_file)
     if domain:
         addDomain(domain, output_file)
 
-    # Print the combined username
     print("Done")
 
 
