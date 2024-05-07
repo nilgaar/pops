@@ -1,3 +1,5 @@
+![pops.cafe](logo.webp)
+
 # pops
 
 A journey to CyberSecurity
