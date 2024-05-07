@@ -1,4 +1,4 @@
-![pops.cafe](logo.webp)
+![pops.cafe](logo.png)
 
 # pops
 
