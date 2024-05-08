@@ -15,7 +15,7 @@ def crawlForLinks(url):
 
 def main():
     parser = argparse.ArgumentParser(
-        description="List all domains and files in a webpage"
+        description="List all links found in a web page"
     )
     parser.add_argument("url", type=str, help="The URL of the webpage")
     baseUrl = parser.parse_args().url
