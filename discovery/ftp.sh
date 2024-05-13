@@ -15,6 +15,8 @@ else
         echo "Anonymous login is not allowed"
     else
         echo "Anonymous login is allowed"
+        echo "Try: ftp <IP>"
+        echo "Login: anonymous"
     fi
     echo "Checking if the configuration file allows local users to login"
     if [ -z "$(grep -i "local_enable=YES" /etc/vsftpd.conf)" ]; then
@@ -35,3 +37,19 @@ else
         echo "FTP users are allowed to upload files"
     fi
 fi
+
+# Check ftpusers file
+# /etc/ftpusers : this file is used to deny certain users access to the FTP service
+if [ ! -f "/etc/ftpusers" ]; then
+    echo "ftpusers file does not exist"
+else
+    echo "ftpusers file exists"
+    echo "Checking if the ftpusers file contains any users"
+    if [ -z "$(cat /etc/ftpusers)" ]; then
+        echo "No users are denied access to the FTP service"
+    else
+        echo "The following users are denied access to the FTP service:"
+        cat /etc/ftpusers
+    fi
+fi
+
