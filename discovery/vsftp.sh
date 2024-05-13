@@ -1,5 +1,7 @@
 #!/bin/bash
-
+echo "========================================"
+echo "=========== vsFTPd Discovery ==========="
+echo "========================================"
 # Check if this machines is running vsFTPd
 if [ -z "$(ps aux | grep vsftpd | grep -v grep)" ]; then
     echo "vsFTPd is not running"
@@ -53,3 +55,5 @@ else
     fi
 fi
 
+echo "========================================"
+echo "========================================"
