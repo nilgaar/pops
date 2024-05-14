@@ -20,3 +20,8 @@ PTH, PassTheHash, SMB, RDP
 
 # [Rubeus]()
 PtT, PassTheTicket, kerberos
+
+# [HashId](https://github.com/psypanda/hashID)
+hash, hashId, hashIdentifier, hashType, hashFormat
+
+# [HashCat](https://hashcat.net/hashcat/)
