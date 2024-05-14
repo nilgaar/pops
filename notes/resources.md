@@ -1,0 +1,8 @@
+[National Vulenrability Database](https://nvd.nist.gov/)
+[Security Tracker](https://securitytracker.com/)
+[HackerWatch](https://www.hackerwatch.org/)
+[Dark Reading](https://www.darkreading.com/)
+[Exploit Database](https://www.exploit-db.com/)
+[HackerStorm](https://hackerstorm.co.uk/)
+[SANS Reading Room](https://www.sans.org/reading_room/)
+[SecurityFocus](https://www.securityfocus.com/)
