@@ -160,3 +160,4 @@ cython_debug/
 #.idea/
 test/nil_gallego.list
 test/expected_result_username_combiner.list
+victim.list
