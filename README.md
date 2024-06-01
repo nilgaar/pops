@@ -5,6 +5,7 @@
 A journey to CyberSecurity
 
 ## What's inside:
+Before running any script, be sure to ru `set_victim.sh` to set the victim's IP address.
 
 ### /discovery:
 
