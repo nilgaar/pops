@@ -25,3 +25,12 @@ PtT, PassTheTicket, kerberos
 hash, hashId, hashIdentifier, hashType, hashFormat
 
 # [HashCat](https://hashcat.net/hashcat/)
+
+# [PowerView/SharpView](https://github.com/PowerShellMafia/PowerSploit/blob/master/Recon/PowerView.ps1 / https://github.com/dmchell/SharpView)
+AD, ActiveDirectory, domain, Kerberoasting, ASREPRoasting
+
+# [BloodHound](https://github.com/BloodHoundAD/BloodHound)
+AD, ActiveDirectory, domain, domainController, domainAdmin, domainUser, domainGroup, domainPolicy, domainTrust
+
+# [SharpHound](https://github.com/BloodHoundAD/BloodHound/tree/master/Collectors)
+AD, ActiveDirectory, domain,ACLs, GPOs
