@@ -2,6 +2,13 @@
 PTH, PassTheHash, kerberos, golden ticket, ticket, PTK, PassTheTicket, windows, NTLM, PassTheTicket, PtT, kerberos
 
 ## Module `sekurlsa`
+### `ekurlsa::tickets`
+Get all tickets from a system using the Mimikatz module `sekurlsa::tickets /export`.
+It will safe the tickets in files with `.kirbi` format.
+The tickets that end with $ correspond to the computer account, which needs a ticket to interact with the Active Directory.
+Tickets for service `krbtgt` are the TGTs.
+### `sekurlsa::ekeys` needed to craft custom tickets
+Dump users Kerberos encryption keys
 
 # [Invoke-TheHash](https://github.com/Kevin-Robertson/Invoke-TheHash)
 PTH, PassTheHash, WMI, SMB, windows, NTLM
@@ -20,6 +27,9 @@ PTH, PassTheHash, SMB, RDP
 
 # [Rubeus]()
 PtT, PassTheTicket, kerberos
+## `dump`
+Dump all tickets, must run as Administrator.
+
 
 # [HashId](https://github.com/psypanda/hashID)
 hash, hashId, hashIdentifier, hashType, hashFormat
