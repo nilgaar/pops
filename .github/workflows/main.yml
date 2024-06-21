@@ -13,12 +13,15 @@ jobs:
     steps:
       - uses: actions/checkout@v2
 
-      - name: run subdomainers test 
+      - name: Install ffuf
         run: |
-          cd ./test 
-          sh ./subdomainer.test.sh
+          sudo apt-get update
+          sudo apt-get install -y golang-go
+          go install github.com/ffuf/ffuf@latest
+          echo "$(go env GOPATH)/bin" >> $GITHUB_PATH
+
+      - name: run subdomainers test 
+        run: sh ./test/subdomainer.test.sh
 
       - name: run username_combiner test
-        run: |
-          cd ./test
-          sh ./username_combiner.test.sh
+        run: sh ./test/username_combiner.test.sh
