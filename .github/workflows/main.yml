@@ -21,7 +21,11 @@ jobs:
           echo "$(go env GOPATH)/bin" >> $GITHUB_PATH
 
       - name: run subdomainers test 
-        run: sh ./test/subdomainer.test.sh
+        run: |
+          cd test
+          sh ./subdomainer.test.sh
 
       - name: run username_combiner test
-        run: sh ./test/username_combiner.test.sh
+        run: |
+          cd test
+          sh ./username_combiner.test.sh
