@@ -1,5 +1,5 @@
 ![pops.cafe](logo.png)
-
+[![Main](https://github.com/nilgaar/pops/actions/workflows/main.yml/badge.svg)](https://github.com/nilgaar/pops/actions/workflows/main.yml)
 # pops
 
 A journey to CyberSecurity
