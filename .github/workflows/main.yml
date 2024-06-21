@@ -1,1 +1,20 @@
+# run on main changes, to run tests
+name: Main
 
+on:
+  push:
+    branches:
+      - main
+    
+jobs:
+  test:
+    runs-on: ubuntu-latest
+    
+    steps:
+      - uses: actions/checkout@v2
+
+      - name: run subdomainers test 
+        run: sh ./test/subdomainer.test.sh
+
+      - name: run username_combiner test
+        run: sh ./test/username_combiner.test.sh
