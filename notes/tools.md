@@ -44,3 +44,13 @@ AD, ActiveDirectory, domain, domainController, domainAdmin, domainUser, domainGr
 
 # [SharpHound](https://github.com/BloodHoundAD/BloodHound/tree/master/Collectors)
 AD, ActiveDirectory, domain,ACLs, GPOs
+
+# `realm`
+AD, ActiveDirectory, ADonLinux
+Get the domain name of the current user
+
+# `sssd`
+AD, ActiveDirectory, ADonLinux
+
+# `winbind`
+AD, ActiveDirectory, ADonLinux
