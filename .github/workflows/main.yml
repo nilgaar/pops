@@ -1,5 +1,5 @@
 # run on main changes, to run tests
-name: Main
+name: Test dicovery tools
 
 on:
   push:
